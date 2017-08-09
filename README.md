@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [img02]: ./output_images/image_processing/02_distortion_correction/test4.jpg "Undistorted"
 [img03]: ./output_images/image_processing/03_binary_image/test4.jpg "Binary"
 [img04]: ./output_images/image_processing/04_binary_warped/test4.jpg "Warp Example"
-[img05]: ./output_images/image_processing/05_binary_warped_fit/test4.jpg "Fit Example"
+[img05]: ./output_images/image_processing/05_binary_warped_fit2/test4.jpg "Fit Example"
 [img06]: ./output_images/image_processing/08_process_image/test4.jpg "Output"
 [video1]: ./project_video_output.mp4 "Video"
 
