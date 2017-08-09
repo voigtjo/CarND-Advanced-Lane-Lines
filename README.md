@@ -1,5 +1,4 @@
-## Writeup Template
-
+## Writeup
 
 ---
 
@@ -23,8 +22,8 @@ The goals / steps of this project are the following:
 [img03]: ./output_images/image_processing/03_binary_image/test4.jpg "Binary"
 [img04]: ./output_images/image_processing/04_binary_warped/test4.jpg "Warp Example"
 [img05]: ./output_images/image_processing/05_binary_warped_fit/test4.jpg "Fit Example"
-[img06]: ./output_images/image_processing/08_process_imagetest4.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+[img06]: ./output_images/image_processing/08_process_image/test4.jpg "Output"
+[video1]: ./project_video_output.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -66,7 +65,7 @@ I used a  combination of HLS  and gray image thresholds to generate a binary ima
 
 The code for my perspective transform includes a function called `warper()`, in chapter "4. Apply a perspective transform to rectify binary image ("birds-eye view")" (code cell 9). The `warp()` function takes as inputs the binary img from the previous step (`binaryImg`), as well as the undisted image to receive the heigth and width on witch the source (`src`) and destination (`dst`) points depend.  
 ```python
-	src = np.float32([(575,464),
+src = np.float32([(575,464),
                       (707,464), 
                       (258,682), 
                       (1049,682)])
@@ -92,7 +91,7 @@ I calculated the radius of curvature of the lane and the position of the vehicle
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this in chapter "7. Warp the detected lane boundaries back onto the original image" and chapter "8. Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.¶"  in the function `process_image` with several helper functions.  Here is an example of my result on the test image:
+I implemented this in chapter "7. Warp the detected lane boundaries back onto the original image" and chapter "8. Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position."  in the function `process_image` with several helper functions.  Here is an example of my result on the test image:
 
 ![alt text][img06]
 
@@ -110,4 +109,4 @@ Here's a [link to my video result](./project_video.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-The solution is only a starting point for real life conditions, which means that the lane is always limited by lane lines
+The solution is just a starting point for real life conditions, which means that the lane is always limited by lane lines.
